@@ -1,0 +1,70 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://th.bing.com/th/id/R.adb26e8991d1bee469463ba21371d071?rik=IhWjhEKBgF7Blw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-sm0o6dv4nmQ%2fTlPxt_mZq6I%2fAAAAAAAAkYY%2fSxGWzGCNygA%2fs1600%2fsuperb-nature-corner-1920x1200.jpg&ehk=oxDooEgrc3MZHXGOGow5ISV%2fdpJSu0%2fxFQC4Orp2lKQ%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333333;
+    text-align: center;
+}
+
+.contact-image {
+    width: 150px;
+    border-radius: 50%;
+    margin: 50px auto 20px;
+    display: block;
+}
+
+.contact-name {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.contact-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto 50px;
+}
+
+.contact-info div {
+    margin-bottom: 15px;
+}
+.contact-info > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    min-width: 40%;
+}
+
+.contact-info {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+.contact-info img {
+    width: 30px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+}
