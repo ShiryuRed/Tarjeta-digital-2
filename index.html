@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="https://www.bing.com/th?id=OIP.cQcHfODzEQdpE6Ka7o1trwHaEc&w=176&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Foto de la persona" class="contact-image">
+    <h1 class="contact-name">Micho</h1>
+
+    <div class="contact-card">
+        <div class="contact-info">
+            <div>
+                <img src="images/facebook-svgrepo-com.svg" alt="Icono de Facebook">
+                <a href="https://www.facebook.com/tuusuario" target="_blank">Facebook</a>
+            </div>
+            <div>
+                <img src="images/instagram-svgrepo-com.svg" alt="Icono de Instagram">
+                <a href="https://www.instagram.com/tuusuario" target="_blank">Instagram</a>
+            </div>
+            <div>
+                <img src="images/whatsapp-svgrepo-com.svg" alt="Icono de Whatsapp">
+                <span>+123456789</span>
+            </div>
+            <div>
+                <img src="images/phone-call-alt-1-svgrepo-com.svg" alt="Icono de Teléfono">
+                <span>+123456789</span>
+            </div>
+            <div>
+                <img src="images/calendar-days-svgrepo-com.svg" alt="Icono de Calendario">
+                <a href="#" target="_blank">Agendar Cita</a>
+            </div>
+            <div>
+                <img src="images/location-pin-alt-1-svgrepo-com.svg" alt="Icono de Ubicación">
+                <span>Dirección: Calle Ejemplo #123 Av 123 colonia 123</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var location = {lat: 40.7128, lng: -74.0060}; // Coordenadas de ejemplo
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+
+</body>
+</html>
