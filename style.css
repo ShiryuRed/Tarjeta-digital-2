@@ -54,16 +54,19 @@ h2 {
     text-align: center;
 }
 
-.contact-card {
+.contact-card, .info-card {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 400px;
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
 }
-
+.info-card {
+    padding: 10px;
+    margin: 0 auto 15px;
+}
 .contact-info div {
     margin-bottom: 15px;
 }
