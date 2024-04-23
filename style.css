@@ -2,6 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('https://th.bing.com/th/id/R.adb26e8991d1bee469463ba21371d071?rik=IhWjhEKBgF7Blw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-sm0o6dv4nmQ%2fTlPxt_mZq6I%2fAAAAAAAAkYY%2fSxGWzGCNygA%2fs1600%2fsuperb-nature-corner-1920x1200.jpg&ehk=oxDooEgrc3MZHXGOGow5ISV%2fdpJSu0%2fxFQC4Orp2lKQ%3d&risl=&pid=ImgRaw&r=0');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     color: #333333;
     text-align: center;
@@ -30,8 +31,8 @@ img {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    max-width: 300px;
+    text-align: center;
+    max-width: 400px;
     margin: 0 auto 50px;
 }
 
@@ -77,17 +78,16 @@ a:hover {
     max-width: 90%;
     min-width: 40%;
     transition: background .5s, height .4s;
-    height: 72px;
     overflow: hidden;
-}
-.gallery-on {
-    height: 300px;
+    max-width: 500px;
+    max-height: 400px;
 }
 .gallery_container {
     border: 3px solid yellow;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2px;
+    padding: 4px;
 }
 .gallery_container > img{
     object-fit: cover;
@@ -100,4 +100,14 @@ a:hover {
 #map {
     height: 300px;
     width: 100%;
+}
+
+.contact-developer {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 200px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
 }
