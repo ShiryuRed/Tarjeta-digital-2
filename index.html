@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="modal-container" hidden="true">
+        <div class="modal">
+            <img src="https://i.pinimg.com/originals/36/96/8c/36968c6cce7610f295d01bb38bbf213b.jpg" alt="" class="modal-content">
+        </div>
+    </div>
     <img src="https://www.bing.com/th?id=OIP.cQcHfODzEQdpE6Ka7o1trwHaEc&w=176&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Foto de la persona" class="contact-image">
     <h1 class="contact-name">Micho</h1>
 
@@ -41,12 +45,12 @@
     </div>
 
     <div class="gallery gallery-on">
-        <h2 class="title" onclick="abrir()">Galeria</h2>
+        <h2 class="title">Galeria</h2>
         <div class="gallery_container">
-            <img src="https://i.pinimg.com/originals/36/96/8c/36968c6cce7610f295d01bb38bbf213b.jpg" alt="">
-            <img src="https://i.pinimg.com/originals/36/96/8c/36968c6cce7610f295d01bb38bbf213b.jpg" alt="">
-            <img src="https://i.pinimg.com/originals/36/96/8c/36968c6cce7610f295d01bb38bbf213b.jpg" alt="">
-            <img src="https://i.pinimg.com/originals/36/96/8c/36968c6cce7610f295d01bb38bbf213b.jpg" alt="">
+            <img src="https://i.pinimg.com/originals/36/96/8c/36968c6cce7610f295d01bb38bbf213b.jpg" alt="" class="modal-img">
+            <img src="https://th.bing.com/th/id/OIP.ft5trO2JQnObIGXPv-ouhgHaEK?rs=1&pid=ImgDetMain" alt="" class="modal-img">
+            <img src="https://i.pinimg.com/originals/36/96/8c/36968c6cce7610f295d01bb38bbf213b.jpg" alt="" class="modal-img">
+            <img src="https://th.bing.com/th/id/OIP.ft5trO2JQnObIGXPv-ouhgHaEK?rs=1&pid=ImgDetMain" alt="" class="modal-img">
             
         </div>
     </div>
@@ -58,12 +62,6 @@
     <footer class="contact-developer">
         <p>Contactame</p>
     </footer>
-    <script>
-        const gallery = document.querySelector(".gallery");
-
-        function abrir() {
-            gallery.classList.toggle("gallery-on")
-        }
-    </script>
+    <script src="modal.js"></script>
 </body>
 </html>
