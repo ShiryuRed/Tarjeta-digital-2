@@ -40,21 +40,27 @@
         </div>
     </div>
 
-    <div id="map"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+    <div class="gallery gallery-on">
+        <h2 class="title" onclick="abrir()">Galeria</h2>
+        <div class="gallery_container">
+            <img src="https://i.pinimg.com/originals/36/96/8c/36968c6cce7610f295d01bb38bbf213b.jpg" alt="">
+            <img src="https://i.pinimg.com/originals/36/96/8c/36968c6cce7610f295d01bb38bbf213b.jpg" alt="">
+            <img src="https://i.pinimg.com/originals/36/96/8c/36968c6cce7610f295d01bb38bbf213b.jpg" alt="">
+            <img src="https://i.pinimg.com/originals/36/96/8c/36968c6cce7610f295d01bb38bbf213b.jpg" alt="">
+            
+        </div>
+    </div>
+
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.021022576682!2d-98.42764788204147!3d18.892001760117285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb38e5572008b%3A0x4c220833e793a802!2sMoraleda%20Centro%20Comercial!5e0!3m2!1ses-419!2smx!4v1713842062194!5m2!1ses-419!2smx" max-width="950%" height="300"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
     <script>
-        function initMap() {
-            var location = {lat: 40.7128, lng: -74.0060}; // Coordenadas de ejemplo
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
+        const gallery = document.querySelector(".gallery");
+
+        function abrir() {
+            gallery.classList.toggle("gallery-on")
         }
     </script>
-
 </body>
 </html>
