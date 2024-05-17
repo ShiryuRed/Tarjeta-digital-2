@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjeta de Contacto</title>
+    <title>Red Digital Creations</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+    <div class="scroll-bg"></div>
+    <!-- <section class="background-anim">
+        <div class='air air1'></div>
+        <div class='air air2'></div>
+        <div class='air air3'></div>
+        <div class='air air4'></div>
+      </section> -->
+      <!-- <video autoplay >
+        <source src="background.mp4" type="video/mp4">
+      </video> -->
     <div class="modal-container" hidden="true">
         <div class="modal">
             <img src="https://i.pinimg.com/originals/36/96/8c/36968c6cce7610f295d01bb38bbf213b.jpg" alt="" class="modal-content">
         </div>
     </div>
-    <img src="https://www.bing.com/th?id=OIP.cQcHfODzEQdpE6Ka7o1trwHaEc&w=176&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Foto de la persona" class="contact-image">
-    <h1 class="contact-name">Micho</h1>
+    <img src="images/pfp-transparent.png" alt="Foto de la persona" class="contact-image">
+    <h1 class="contact-name">Red Digital Creations</h1>
 
     <div class="info-card">
         <p>
@@ -26,34 +37,56 @@
     <div class="contact-card">
         <div class="contact-info">
             <div>
-                <img src="images/facebook-svgrepo-com.svg" alt="Icono de Facebook">
-                <a href="https://www.facebook.com/tuusuario" target="_blank">Facebook</a>
+                <img src="images/facebook-svgrepo-com.svg" alt="Icono de Facebook" class="img-icon">
+                <a href="https://www.facebook.com/tuusuario" target="_blank"><p>Facebook</p></a>
             </div>
             <div>
-                <img src="images/instagram-svgrepo-com.svg" alt="Icono de Instagram">
-                <a href="https://www.instagram.com/tuusuario" target="_blank">Instagram</a>
+                <img src="images/instagram-svgrepo-com.svg" alt="Icono de Instagram" class="img-icon">
+                <a href="https://www.instagram.com/tuusuario" target="_blank"><p>Instagram</p></a>
             </div>
             <div>
-                <img src="images/whatsapp-svgrepo-com.svg" alt="Icono de Whatsapp">
-                <span>+123456789</span>
+                <img src="images/whatsapp-svgrepo-com.svg" alt="Icono de Whatsapp" class="img-icon">
+                <a href="https://api.whatsapp.com/send?phone=522441043578&amp;text=Hola!!" target="_BLANK" aria-label="whatsapp" class="whatsapp">
+                    <p>WhatsApp</p>
+                </a>
             </div>
             <div>
-                <img src="images/phone-call-alt-1-svgrepo-com.svg" alt="Icono de Teléfono">
-                <span>+123456789</span>
+                <img src="images/phone-call-alt-1-svgrepo-com.svg" alt="Icono de Teléfono" class="img-icon">
+                <a href="tel:+522441043578" class="number-phone"> 
+                    <p>244 104 3578</p> 
+                </a>
             </div>
             <div>
-                <img src="images/calendar-days-svgrepo-com.svg" alt="Icono de Calendario">
-                <a href="#" target="_blank">Agendar Cita</a>
+                <img src="images/calendar-days-svgrepo-com.svg" alt="Icono de Calendario" class="img-icon">
+                <!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2SNPmrO0YrsNqkjyAOYHqZO_VBcm2Hs_nHZi586czGYgtxRmpGwCaJHsRI-Xw6Z1h3rZ_EEwFK?gv=true',
+      color: '#039BE5',
+      label: 'Programar una cita',
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
             </div>
             <div>
-                <img src="images/location-pin-alt-1-svgrepo-com.svg" alt="Icono de Ubicación">
-                <span>Dirección: Calle Ejemplo #123 Av 123 colonia 123</span>
+                <img src="images/location-pin-alt-1-svgrepo-com.svg" class="img-icon" alt="Icono de Ubicación">
+                <a href="https://www.google.com/maps?ll=18.892613,-98.426508&z=17&t=m&hl=es-419&gl=MX&mapclient=embed&cid=5485956315112253442" target="_blank">
+                    <p>Dirección: Carr. Internacional 1901, Área de la la Alfonsina, 74294 Atlixco, Pue.</p>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="gallery gallery-on">
-        <h2 class="title">Galeria</h2>
+        <h2 class="title">Nuestro trabajo</h2>
         <div class="gallery_container">
             <img src="https://i.pinimg.com/originals/36/96/8c/36968c6cce7610f295d01bb38bbf213b.jpg" alt="" class="modal-img">
             <img src="https://th.bing.com/th/id/OIP.ft5trO2JQnObIGXPv-ouhgHaEK?rs=1&pid=ImgDetMain" alt="" class="modal-img">
@@ -66,9 +99,15 @@
     <div id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.021022576682!2d-98.42764788204147!3d18.892001760117285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb38e5572008b%3A0x4c220833e793a802!2sMoraleda%20Centro%20Comercial!5e0!3m2!1ses-419!2smx!4v1713842062194!5m2!1ses-419!2smx" max-width="950%" height="300"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    <div class="a">
+        <!-- Google Calendar Appointment Scheduling begin -->
+<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2SNPmrO0YrsNqkjyAOYHqZO_VBcm2Hs_nHZi586czGYgtxRmpGwCaJHsRI-Xw6Z1h3rZ_EEwFK?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+<!-- end Google Calendar Appointment Scheduling -->
+    </div>
     
     <footer class="contact-developer">
         <p>Contactame</p>
+        
     </footer>
     <script src="modal.js"></script>
 </body>
