@@ -130,7 +130,7 @@ a:hover {
 .gallery {
     margin: auto;
     margin-bottom: 20px;
-    background-color: #1d025c;
+    background-color: #100261cc;
     max-width: 90%;
     min-width: 40%;
     overflow: hidden;
@@ -159,13 +159,30 @@ a:hover {
 }
 
 .contact-developer {
-    background-color: #1d025c;
-    height: 200px;
+    background-color: #100261cc;
+    height: 250px;
     margin: 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
+    max-width: 500px;
+    flex-direction: column;
+    color: #bdff07;
+}
+.contact-developer > h2 > a {
+    color: #f00;
+}
+.img-icon-footer {
+    filter: invert(100%);
+    max-width: 30px;
+}
+.contact-developer > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 5px;
+    color: #FFF;
 }
 /* 
 
@@ -258,5 +275,4 @@ a:hover {
   }
 .a {
     background-color: #fff;
-    color: ;
 }
